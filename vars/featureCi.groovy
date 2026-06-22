@@ -1,5 +1,5 @@
 def call(Map config = [:]) {
-    stage('Checkout') {
+    stage('Build Context') {
         checkoutSource()
         echo "Service: ${config.serviceName}"
     }
