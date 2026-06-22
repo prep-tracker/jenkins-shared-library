@@ -1,6 +1,7 @@
-def call(Map config = [:]){
-    stage('Checkout'){
+def call(Map config = [:]) {
+    stage('Checkout') {
         checkoutSource()
+        echo "Branch: ${config.serviceName}"
     }
 //    stage('Maven Build'){}
 //    stage('Unit Testing'){}
